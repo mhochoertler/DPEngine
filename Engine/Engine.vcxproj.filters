@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="inc">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="inc\Core">
+      <UniqueIdentifier>{2246cf8c-4f20-4fcd-9482-23f164e1bb9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Core">
+      <UniqueIdentifier>{b7e24fbd-688a-4077-9e05-ee32bafead21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\SceneGraph">
+      <UniqueIdentifier>{a9fc42bd-52a0-4d14-a73c-3d8df74f4531}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\Defines">
+      <UniqueIdentifier>{02aa3aa3-8137-4f0f-8b4f-7eb8581e13f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Defines">
+      <UniqueIdentifier>{1e71a304-d1be-4d72-8b87-a0cce92ceb54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\SceneGraph">
+      <UniqueIdentifier>{72f92dc9-f320-43fc-ad65-03d701c6e291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\Diagnostics">
+      <UniqueIdentifier>{a04473ca-180a-407c-991b-878495c5747b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\Helpers">
+      <UniqueIdentifier>{723ada0a-3430-457d-a153-357fdc164717}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\Interfaces">
+      <UniqueIdentifier>{eb8521c9-55b1-4186-959c-ba807ef4c941}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Diagnostics">
+      <UniqueIdentifier>{a8f52a86-6fe0-4176-bb93-5cdaf9d54187}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Helpers">
+      <UniqueIdentifier>{37714552-b3bb-4d70-8203-852bf81787e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Interfaces">
+      <UniqueIdentifier>{b53db8fb-5578-4d52-99c6-7a34c4311216}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\Core\Game">
+      <UniqueIdentifier>{e19ef54a-ca75-42fe-a2d2-a5ebdbff5dba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\Core\Resources">
+      <UniqueIdentifier>{7106077b-22f2-4355-9d05-99887948776d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\Core\Settings">
+      <UniqueIdentifier>{33444cf2-2041-4359-a3c9-dd9fb81ca8ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\Core\System">
+      <UniqueIdentifier>{aca29427-18e1-45eb-ba72-9cef85c53d36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Core\Game">
+      <UniqueIdentifier>{b0035379-9df7-41bf-a5d4-b84a0c31c5af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Core\System">
+      <UniqueIdentifier>{ac7a9e63-744c-4a06-a03f-8f0a870e7748}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Core\Settings">
+      <UniqueIdentifier>{36d733d8-b930-40ff-bdd2-faa3dc24a0ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Core\Resources">
+      <UniqueIdentifier>{525607e2-03ef-4f73-828d-bd48f5bff7ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\Core\Resources\Manager">
+      <UniqueIdentifier>{57b87e5c-7f11-4645-b89b-334c91eefbf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Core\Resources\Manager">
+      <UniqueIdentifier>{d7fd1b29-d2e2-45c9-82e6-a59ced2bca79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\Core\System\Manager">
+      <UniqueIdentifier>{20b14fa5-63c0-45c5-9f14-2c905946ca1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Core\System\Manager">
+      <UniqueIdentifier>{1b1a237b-0e80-4d10-bd00-b48b7dcc2e9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\Helpers\Math">
+      <UniqueIdentifier>{9d4a5d7a-3a55-4e12-b961-ca8ce0e2d21f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Helpers\Math">
+      <UniqueIdentifier>{41118a3b-d643-4575-9937-482ec8755b03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\Components">
+      <UniqueIdentifier>{ed1ad6a2-d5e8-4e8e-807a-3a5a8da096e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Components">
+      <UniqueIdentifier>{ee69b8ad-4e77-4c88-8ec6-d3b7bc760b18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc\Core\Game\Manager">
+      <UniqueIdentifier>{837a7633-85b2-415c-8bb1-4da876579318}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Core\Game\Manager">
+      <UniqueIdentifier>{0960a268-b9ce-4398-9fa0-8031deb7c6e6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine.h">
+      <Filter>inc\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractGame.h">
+      <Filter>inc\Core\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>inc\Core\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio.h">
+      <Filter>inc\Core\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>inc\Core\Resources\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="ApplicationSettings.h">
+      <Filter>inc\Core\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings.h">
+      <Filter>inc\Core\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSettings.h">
+      <Filter>inc\Core\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldSettings.h">
+      <Filter>inc\Core\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="PhyxSettings.h">
+      <Filter>inc\Core\Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="System.h">
+      <Filter>inc\Core\System</Filter>
+    </ClInclude>
+    <ClInclude Include="MainTimer.h">
+      <Filter>inc\Core\System</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemManager.h">
+      <Filter>inc\Core\System\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyList.h">
+      <Filter>inc\Defines</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>inc\Core\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="InputHandler.h">
+      <Filter>inc\Core\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>inc\Core\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="PerlinNoise.h">
+      <Filter>inc\Helpers\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemType.h">
+      <Filter>inc\Defines</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionDetector.h">
+      <Filter>inc\Core\System</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionResolver.h">
+      <Filter>inc\Core\System</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>inc\Core\Game\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureLoader.h">
+      <Filter>inc\Core\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>inc\SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>inc\Core\System</Filter>
+    </ClInclude>
+    <ClInclude Include="SDML.h">
+      <Filter>inc\Core\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2D.h">
+      <Filter>inc\SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>inc\SceneGraph</Filter>
+    </ClInclude>
+    <ClInclude Include="IDrawable.h">
+      <Filter>inc\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>inc\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentType.h">
+      <Filter>inc\Defines</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxCollider2D.h">
+      <Filter>inc\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterControler2D.h">
+      <Filter>inc\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionType.h">
+      <Filter>inc\Defines</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Engine.cpp">
+      <Filter>src\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractGame.cpp">
+      <Filter>src\Core\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource.cpp">
+      <Filter>src\Core\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio.cpp">
+      <Filter>src\Core\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>src\Core\Resources\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="ApplicationSettings.cpp">
+      <Filter>src\Core\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSettings.cpp">
+      <Filter>src\Core\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="PhyxSettings.cpp">
+      <Filter>src\Core\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings.cpp">
+      <Filter>src\Core\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldSettings.cpp">
+      <Filter>src\Core\Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="System.cpp">
+      <Filter>src\Core\System</Filter>
+    </ClCompile>
+    <ClCompile Include="MainTimer.cpp">
+      <Filter>src\Core\System</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemManager.cpp">
+      <Filter>src\Core\System\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>src\Core\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="InputHandler.cpp">
+      <Filter>src\Core\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>src\Core\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="PerlinNoise.cpp">
+      <Filter>src\Helpers\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionDetector.cpp">
+      <Filter>src\Core\System</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionResolver.cpp">
+      <Filter>src\Core\System</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>src\Core\Game\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureLoader.cpp">
+      <Filter>src\Core\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>src\SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>src\Core\System</Filter>
+    </ClCompile>
+    <ClCompile Include="SDML.cpp">
+      <Filter>src\Core\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>src\SceneGraph</Filter>
+    </ClCompile>
+    <ClCompile Include="IDrawable.cpp">
+      <Filter>src\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="BoxCollider2D.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterControler2D.cpp">
+      <Filter>src\Components</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

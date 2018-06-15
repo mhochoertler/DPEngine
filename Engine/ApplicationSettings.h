@@ -1,0 +1,5 @@
+#ifndef APPLICATIONSETTINGS_H
+#define APPLICATIONSETTINGS_H
+
+
+#endif
