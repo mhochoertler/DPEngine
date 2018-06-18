@@ -70,6 +70,9 @@ void Scene::update()
   {
     object.second->update();
   }
+
+  //Update target camera
+  target_camera_->update();
 }
 
 //-----------------------------------------------------------------------------

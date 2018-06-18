@@ -7,6 +7,7 @@
 #include "AbstractGame.h"
 #include "Player.h"
 #include "Obstacle.h"
+#include "Camera.h"
 
 class Game : public AbstractGame
 {
@@ -20,7 +21,14 @@ class Game : public AbstractGame
     {
       myscene->addObject(*new Obstacle(), x, -200);
     }
-    myscene->addObject((*new Player()), 0, 0);
+
+    myscene->addObject(*new Obstacle(), 300, -172);
+    myscene->addObject(*new Obstacle(), 300, -90);
+    myscene->addObject(*new Obstacle(), 0, -56);
+
+    Player* player = new Player();
+    myscene->getTargetCamera()->followObject(player);
+    myscene->addObject((*player), 0, 56);
   }
 };
 #endif //!GAME_H

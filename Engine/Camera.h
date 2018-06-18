@@ -7,6 +7,8 @@
 
 #include "Vector2D.h"
 
+class IDrawable;
+
 class Camera
 {
   friend class Scene;
@@ -16,6 +18,8 @@ class Camera
     // The central lookingpoint of the camera
     //
     Vector2D origin_;
+
+    IDrawable* obj_to_follow_;
 
   public:
     //-------------------------------------------------------------------------
@@ -33,5 +37,9 @@ class Camera
     int width_;
 
     int height_;
+
+    void followObject(IDrawable* object);
+
+    void update();
 };
 #endif // !CAMERA_H

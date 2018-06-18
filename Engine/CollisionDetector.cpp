@@ -53,10 +53,7 @@ void CollisionDetector::findCollision(IDrawable &object)
     if (!collider2 || collider1 == collider2) continue;
     else if (collider1->hasIntersection(*collider2))
     {
-      defineContactInfo(object, *pair.second);
       object.receiveCollision(*pair.second, contact_info_);
-
-      defineContactInfo(*pair.second, object);
       pair.second->receiveCollision(object, contact_info_);
     }
   }
@@ -70,10 +67,12 @@ void CollisionDetector::defineContactInfo(IDrawable &obj_to_define_info, IDrawab
   Box box = collider1->getBox();
   Box box2 = collider2->getBox();
 
-  SDL_Rect top = { box.btm_left_.x, box.btm_left_.y + 1, collider1->getWidth(), 1 };
-  SDL_Rect btm = { box.top_left_.x, box.top_left_.y, collider1->getWidth(), 1 };
-  SDL_Rect right = { box.btm_right_.x, box.btm_right_.y, 1, collider1->getHeight() };
-  SDL_Rect left = { box.btm_left_.x - 1, box.btm_left_.y, 1, collider1->getHeight() };
+  int offset = 2;
+
+  SDL_Rect top = { box.top_left_.x, box.top_left_.y - offset, collider1->getWidth(), offset };
+  SDL_Rect btm = { box.btm_left_.x, box.btm_left_.y, collider1->getWidth(), offset };
+  SDL_Rect right = { box.top_right_.x, box.top_right_.y, offset, collider1->getHeight() };
+  SDL_Rect left = { box.top_left_.x - offset, box.top_left_.y, offset, collider1->getHeight() };
 
   SDL_Rect o_obj = { box2.top_left_.x, box2.top_left_.y, collider2->getWidth(), collider2->getHeight() };
 
@@ -83,12 +82,19 @@ void CollisionDetector::defineContactInfo(IDrawable &obj_to_define_info, IDrawab
   bool cnt_left = false;
 
   if (SDL_HasIntersection(&top, &o_obj))  cnt_top = true;
-  if (SDL_HasIntersection(&btm, &o_obj))  cnt_btm = true;
-  if (SDL_HasIntersection(&right, &o_obj))  cnt_right = true;
+  if (SDL_HasIntersection(&btm, &o_obj))
+  {
+    cnt_btm = true;
+  }
+  if (SDL_HasIntersection(&right, &o_obj)) 
+  {
+    cnt_right = true;
+  }
   if (SDL_HasIntersection(&left, &o_obj))  cnt_left = true;
 
-  contact_info_->top_ = cnt_top;
-  contact_info_->btm_ = cnt_btm;
+  //Swapped top & btm ???
+  contact_info_->top_ = cnt_btm;
+  contact_info_->btm_ = cnt_top;
   contact_info_->right_ = cnt_right;
   contact_info_->left_ = cnt_left;
 }

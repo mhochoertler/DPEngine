@@ -62,6 +62,8 @@ void CharacterControler2D::updatePosition()
   gravitate();
   if (!isMoving_) decelerate();
   else isMoving_ = false;
+
+  isJumping_ = true;
 }
 
 //-----------------------------------------------------------------------------
@@ -69,6 +71,7 @@ void CharacterControler2D::gravitate()
 {
   speedY_ -= accY_;
   if (speedY_ > maxSpeedY_) speedY_ = maxSpeedY_;
+  else if (speedY_ < maxSpeedY_ * (-1)) speedY_ = maxSpeedY_ * (-1);
 }
 
 //-----------------------------------------------------------------------------

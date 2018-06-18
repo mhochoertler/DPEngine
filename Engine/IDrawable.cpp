@@ -38,6 +38,7 @@ void IDrawable::receiveCollision(IDrawable &colliding_object, ContactInfo* info)
   if (colliding_object.getComponent<BoxCollider2D>()->isSolid()) 
   {
     SystemManager::instance()->getSubSystem<CollisionResolver>()->resolveCollision(*this, colliding_object);
+    SystemManager::instance()->getSubSystem<CollisionDetector>()->defineContactInfo(*this, colliding_object);
 
     //TODO: loose coupling of components
     CharacterControler2D* CMP_CHARCONT2D = getComponent<CharacterControler2D>();
