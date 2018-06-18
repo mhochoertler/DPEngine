@@ -85,9 +85,10 @@
       <SubSystem>Console</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>IF NOT ($(ConfigurationName)) == (Debug) GOTO END
-cd $(ProjectDir)
-copy /SDL-libraries\*.dll x64/Debug</Command>
+      <Command>cd $(SolutionDir)
+copy "SDL-libraries\SDL2-2.0.7\lib\x64\*.dll" "x64\Debug"
+copy "SDL-libraries\SDL2_ttf-2.0.14\lib\x64\*.dll" "x64\Debug"
+copy "SDL-libraries\SDL2_image-2.0.1\lib\x64\*.dll" "x64\Debug"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -109,9 +110,10 @@ copy /SDL-libraries\*.dll x64/Debug</Command>
       <SubSystem>Console</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>IF NOT ($(ConfigurationName)) == (Debug) GOTO END
-cd $(ProjectDir)
-copy /SDL-libraries\*.dll x64/Debug</Command>
+      <Command>cd $(SolutionDir)
+copy "SDL-libraries\SDL2-2.0.7\lib\x64\*.dll" "x64\Debug"
+copy "SDL-libraries\SDL2_ttf-2.0.14\lib\x64\*.dll" "x64\Debug"
+copy "SDL-libraries\SDL2_image-2.0.1\lib\x64\*.dll" "x64\Debug"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -135,9 +137,10 @@ copy /SDL-libraries\*.dll x64/Debug</Command>
       <SubSystem>Console</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>IF NOT ($(ConfigurationName)) == (Debug) GOTO END
-cd $(ProjectDir)
-copy /SDL-libraries\*.dll x64/Debug</Command>
+      <Command>cd $(SolutionDir)
+copy "SDL-libraries\SDL2-2.0.7\lib\x64\*.dll" "x64\Debug"
+copy "SDL-libraries\SDL2_ttf-2.0.14\lib\x64\*.dll" "x64\Debug"
+copy "SDL-libraries\SDL2_image-2.0.1\lib\x64\*.dll" "x64\Debug"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -163,9 +166,10 @@ copy /SDL-libraries\*.dll x64/Debug</Command>
       <SubSystem>Console</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>IF NOT ($(ConfigurationName)) == (Debug) GOTO END
-cd $(ProjectDir)
-copy /SDL-libraries\*.dll x64/Debug</Command>
+      <Command>cd $(SolutionDir)
+copy "SDL-libraries\SDL2-2.0.7\lib\x64\*.dll" "x64\Debug"
+copy "SDL-libraries\SDL2_ttf-2.0.14\lib\x64\*.dll" "x64\Debug"
+copy "SDL-libraries\SDL2_image-2.0.1\lib\x64\*.dll" "x64\Debug"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
